@@ -1,0 +1,34 @@
+CHESS WITH WACKY ITEMS
+
+Every piece will be a component with the following:
+-valid move checker
+-color
+-img url
+-item ref
+-hasItem
+-isValidMove()
+-isColor()
+-useItem()
+
+Itemboxes will be their own piece-like component containing just a string with their name
+
+
+ITEMS
+-Titan
+-Railgun
+-Fireball
+-Multiball
+-Resurrection
+-Necromancy
+
+
+SPECIAL RULES
+-Resurrection only applies on death - 66% chance of revival
+-King has one resurrection by default
+-No item stacking
+-One item box spawns every 3 or 5 moves (coin flip), max 2 boxes per board, oldest despawns, one per side, item applies only to whatever piece grabs it
+-Necromancy only works once there are pieces in the graveyard, have to choose from those
+-Titan and multiball work for 1 turn only, protect through next turn
+-Railgun needs 1 turn to charge, will fire through everything
+-Fireball hits one, travels in any direction until hit
+
