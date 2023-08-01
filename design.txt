@@ -32,3 +32,21 @@ SPECIAL RULES
 -Railgun needs 1 turn to charge, will fire through everything
 -Fireball hits one, travels in any direction until hit
 
+PROGRAM FLOW
+
+
+IN GAME:
+DEFAULT CHESS BEHAVIOR to be extended:
+user clicks space
+-is piece?
+-If piece in board, run piece.getValidMoves() to highlight moves
+-each valid space is highlighted in uhhh light green?
+-spaces w opposite pieces highlighted in red
+-spaces w same color pieces not highlighted
+-if space in green or red, then is valid move
+-Otherwise, maintain state of "moving"
+
+*Pieces will handle their own movement logic.  They will somehow turn on the highlighting of the appropriate board spaces?  
+*just move to a board space that gets highlighted.  No further logic beyond attacks
+*
+*Board array will be stored in state.  Updates will be fired back to the server.
